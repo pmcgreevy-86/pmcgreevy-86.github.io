@@ -23,9 +23,7 @@
   "paths": {
     "/orders": {
       "post": {
-        "tags": [
-          "Order"
-        ],
+        "tags": ["Order"],
         "description": "Create new customer order",
         "responses": {
           "200": {
@@ -62,9 +60,7 @@
     },
     "schemas": {
       "Order": {
-        "required": [
-          "cid"
-        ],
+        "required": ["cid"],
         "properties": {
           "cid": {
             "type": "string",
@@ -80,11 +76,7 @@
         }
       },
       "OrderConfirmation": {
-        "required": [
-          "cid",
-          "orderNo",
-          "paymentDue"
-        ],
+        "required": ["cid", "orderNo", "paymentDue"],
         "properties": {
           "cid": {
             "type": "string",
@@ -106,10 +98,7 @@
       },
       "OrderLine": {
         "description": "Order line in default JSON format",
-        "required": [
-          "productId",
-          "quantity"
-        ],
+        "required": ["productId", "quantity"],
         "properties": {
           "productId": {
             "type": "integer",
@@ -141,9 +130,7 @@
   },
   "security": [
     {
-      "bearerAuth": [
-
-      ]
+      "bearerAuth": []
     }
   ]
 }
